@@ -1,25 +1,31 @@
-h1
+header
 {
-    color:black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-image: url(https://www.preventioninfection.fr/wp-content/uploads/2022/08/AdobeStock_186445101-scaled.jpeg);
+    border-radius: 50px;
+}
+
+infos h1
+{
+    color:white;
     font-family:"Orbitron";
     display: inline-block;
 }
 
-h2
+infos h2
 {
-    color:black;
+    color:white;
     font-family:"Orbitron";
+
 }
 
-h3
+nav
 {
-    color:black;
-    font-family:"Orbitron";
-}
-
-section
-{
-    color: black;
+    background-color:darksalmon;
+    border-radius: 50px;
+    font-family: "Orbitron";
 }
 
 ul
@@ -30,7 +36,7 @@ ul
 li
 {
     text-decoration: none;
-    color:black;
+    color:purple;
     display: inline-block;
     align-content: center;
     font-family: "Orbitron";
@@ -38,25 +44,77 @@ li
     
 }
 
-nav
+presentation 
 {
-    background-color:darkgreen;
-    border-radius: 50px;
-    font-family: "Orbitron";
+    display: flex;
+    justify-content: space-evenly;
 }
 
-header
+presentation photo
 {
+    margin-right: 0px;
+    max-width: 60%;
     text-align: center;
-    text-decoration: none;
-    padding: 10px;
 }
 
-body
+presentation img
 {
-    background-color: ghostwhite);
-    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
 }
+
+presentation txt 
+{
+    background-color: darksalmon;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    border-radius: 50px;
+
+    padding: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: purple;
+    text-size-adjust:initial;
+}
+
+container1_form
+{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+container1_form #formation
+{
+    background-color: darksalmon;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50px;
+    padding: 50px;
+}
+
+container1_form #formation  h2
+{
+    color:purple;
+    font-family:"Orbitron";
+}
+
+container1_form #formation h3
+{
+    color:purple;
+    font-family:"Orbitron";
+}
+
+container1_form #formation h4
+{
+    color:black;
+    font-family:"Orbitron";
+}
+
+
 
 links
 {
@@ -68,7 +126,17 @@ links
     right:40px;    
 }
 
-div
+competences
 {
-    width=50%;
+    
+    background-color: aqua;
+}
+
+footer
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-image: url(https://www.preventioninfection.fr/wp-content/uploads/2022/08/AdobeStock_186445101-scaled.jpeg);
+    border-radius: 50px;
 }
