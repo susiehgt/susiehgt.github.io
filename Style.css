@@ -18,6 +18,8 @@ header
 {
     color:white;
     font-family:"Orbitron";
+    background: none;
+    padding: 0;
 
 }
 
@@ -51,7 +53,11 @@ h2
     color:purple;
     font-family:"Orbitron";
     padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
+    background-image: url(https://www.preventioninfection.fr/wp-content/uploads/2022/08/AdobeStock_186445101-scaled.jpeg);
+    background-position:left;
+    border-radius: 50px;
 }
 
 h3
@@ -66,27 +72,27 @@ h4
     font-family:"Orbitron";
 }
 
-presentation 
+container_presentation 
 {
     display: flex;
     justify-content: space-evenly;
 }
 
-presentation photo
+container_presentation #photo
 {
-    margin-right: 0px;
+    margin-right: -40px;
     max-width: 60%;
     text-align: center;
 }
 
-presentation img
+container_presentation img
 {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 50px;
 }
 
-presentation txt 
+container_presentation #txt 
 {
     background-color: darksalmon;
     margin-top: 50px;
@@ -94,7 +100,7 @@ presentation txt
     margin-left: 50px;
     border-radius: 50px;
 
-    padding: 50px;
+    padding: 40px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     color: purple;
@@ -102,14 +108,14 @@ presentation txt
 
 }
 
-container1_form
+container_formation
 {
     display: flex;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
-container1_form #formation
+container_formation #formation
 {
     background-color: darksalmon;
     margin-bottom: 50px;
@@ -170,7 +176,7 @@ links
     padding-right: 50px;
 }
 
-projets
+container_projets
 {
     background-color: darksalmon;
     margin-bottom: 50px;
@@ -178,20 +184,33 @@ projets
     margin-right: 50px;
     border-radius: 50px;
     padding: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
 
-    display: block;
-    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-justify: auto;
+}
+
+container_projets #texte_projet
+{
+    width: 50%;
+    float:right;
+    margin-right: 20px;
 
 }
 
-#projets #texte_projet
+container_projets #image_projet
 {
-    background-color:blue;
+    flex-basis: 40%;
 }
 
-#projets #image_projet
+container_projets img
 {
-    background-color: aquamarine;
+    max-width: 100%;
+    border-radius: 50px;
 }
 
 #experiences
