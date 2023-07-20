@@ -6,7 +6,7 @@
     <meta name="keywords" content="CV, HTML" />
     <meta name="author" content="Susie HUGET" />
     <title>CV HUGET Susie</title> 
-    <link rel="stylesheet" href="https://susiehgt.github.io/Style.css"/>
+    <link rel="stylesheet" href="Style.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,48 +43,48 @@
             <a href="#formation"><li>Formation</li></a>
             <a href="#competences"><li>Compétences</li></a>
             <a href="#projetss"><li>Projets</li></a>
-            <a href="#Experiences"><li>Experiences</li></a>
             <a href="#contact"><li>Contact</li></a>
         </ul>
     </nav>
 </header>
 
-<presentation>
-    <txt>
+<container_presentation>
+    <div id="txt">
+        <h2>A propos de moi</h2>
         <p>Je suis actuellement à la recherche d'une alternance pour ma deuxième année de master en bio-informatique.</p>
         <p>Suite a ma licence en Biologie Humaine, je suis portée vers la création de sites webs, de logiciels ainsi que la robotique dans le domaine médical.</p>
-        <p>Ce site web fait partie de mes projets personels. Il est le fruit de mes compétences en programmation (ici HTML et CSS) et est disponible en anglais. 
-            J'ai pris soin d'intégrer les liens aux differentes formations auxquelles j'ai participés et vous pouvez me contacter en cliquant sur les liens menants à mon Linkedin ou à mon adresse mail.
+        <p>Ce site web fait partie de mes projets personnels. Il est le fruit de mes compétences en programmation (ici HTML et CSS) et est disponible en anglais. 
+            J'ai pris soin d'intégrer les liens aux différentes formations auxquelles j'ai participés et vous pouvez me contacter en cliquant sur les liens menants à mon Linkedin ou à mon adresse mail.
         </p>
-    </txt>
-    <photo>
+    </div>
+    <div id="photo">
         <img src="https://susiehgt.github.io/Susie.JPG" title="Susie HUGET" width="80%"> 
-    </photo>
-</presentation>
+    </div>
+</container_presentation>
 
 
-<container1_form>
+<container_formation>
     <div id="formation">
         <h2> Formation </h2>
             <a href="https://formations.u-bordeaux.fr/#/details-formation?type=formation&id=118" title="Lien vers la page de description du master Bio-informatique"><h3>Master Bio-informatique, mention Biologie Computationnelle</h3></a>
                 <h4>Université de Bordeaux</h4>
-                    Lors de ma première année, j'ai pu aborder les bases du codage informatique. 
-                    <p>
-                    J'ai aussi découvert son usage dans l'analyse de données ainsi que la création de logiciels et de sites web. 
-                    </p>    
-                    J'ai aussi eu la chance de découvrir l'électronique et la robotique grâce à mon projet de fin d'année.
+                <h5>En cours, premier semestre obtenu avec mention Assez Bien</h5>
+                Ma première année m’a initié à divers langages de programmation. Les différents projets auxquels j’ai pu participer m’ont permis 
+                l’apprentissage d’algorithmes utilisés dans le domaine de la biologie ainsi que les règles d’usage des différents langages. 
+                J’ai pu participer à divers projets dans plusieurs domaines tels que le développement web, le développement de logiciels, 
+                l’analyse de données ainsi que le traitement d’images. A l’occasion de mon projet de fin d’année, j’ai également eu la chance de 
+                travailler sur un projet de robotique dans lequel j’ai pu étudier les bases de l’électronique et de la programmation de matériel.
+
 
         <a href="https://2is.u-picardie.fr/formations/licence-sps/licence-sciences-pour-la-sante-583733.kjsp?RH=1550147816631" title="Lien vers la page de description de la licence Sciences Pour la Santé"><h3>Licence de Sciences Pour la Santé, mention Biologie Humaine et technologies de la santé</h3></a>
             <h4>Université Picardie Jules Vernes </h4>
             <h4>Université Cyrillus y Methoda</h4>
                 <h5>Mention Assez Bien</h5>
-                    Cette licence m'a permis de développer mes connaissances en
-                    biologie humaine. 
-                    <p>
-                    Durant ma 3e année de licence, j'ai eu l'occasion de partir en Slovaquie dans le cadre d'un échange Erasmus. 
-                    <p>
-                    J'ai pu y découvrir une nouvelle culture et développer mes compétences en laboratoire lors d'un projet d'analyse
-                    des bacteries contenues dans les eaux de la station thermale de la ville de Piešťany.
+                Après mon Baccalauréat Scientifique j’ai choisi de m’inscrire à la licence Sciences Pour la Santé dans le but d’élargir mes compétences en biologie humaine. 
+                J’ai aussi effectué une année en Erasmus en Slovaquie de manière à perfectionner mon anglais. 
+                Durant cette année à l’étranger j’ai pu travailler sur un projet de biologie dont le but a été d’identifier les différents micro-organismes présents dans les 
+                sources thermales de Piešťany. Cette année fût enrichissante culturellement et scolairement car, les effectifs en Slovaquie étant réduits, 
+                j’ai pu bénéficier d’un très bon suivi et aussi de beaucoup d’occasions de travailler et de manipuler en laboratoires.
                     </p>
                     </p>
 
@@ -108,7 +108,7 @@
             <li><img src="https://cdn-icons-png.flaticon.com/512/4492/4492311.png" width="150px" title="SQL"> </li>
         </ul>
     </div>
-</container1_form>
+</container_formation>
 
 <div id="suiteComp">
     <h2>Systèmes d'exploitation</h2>
@@ -120,38 +120,23 @@
 </div>
 
 
-<projets>
-    <class id="projetss"></class>
-    <h2>Projets</h2>
+<container_projets>
     <div id="Projet_arubot">
+        <h2>Projets</h2>
         <div id="texte_projet">
             <h3>Le projet ArUbot</h3>
-            Le but de ce projet a été la construction d'une flotte de robots détectés par des marqueurs via une caméra. 
+            Le but de ce projet a été la construction d'une flotte de robots détectés par des marqueurs ArUco via une caméra externe. 
+            <p>Lors de ce projet de groupe, nous avons modélisé le robot grâce au logiciel OnShape. Ensuite nous avons construit ces robots. 
+            Ceux-ci sont équipés d'un microcontroleur ESP32, d'un driver L298N permettant de contôler 2 moteurs.
+            </p> Ma contribution au projet a été l'implémentation de code sur le microcontrôleur via l'IDE (integrated development environment) ArduinoIDE. 
+            Cet IDE utilise le langage de programmation C++ qui est orienté dans la programmation de l'hardware. J'ai aussi développé le site web permettant le contrôle des 
+            robots. Pour cela j'ai utilisé le langage de programmation HTML. 
         </div>
         <div id="image_projet">
-            <img src="https://susiehgt.github.io/Projet_ArUbot.png" title="Robot du projet ArUbot" width="20%">
+            <img src="https://susiehgt.github.io/Projet_ArUbot.png" title="Robot du projet ArUbot" width="40%">
         </div>
     </div>
-</projets>
-
-    <div id="experiences">
-        <h2>Experiences</h2>
-            <h4>Boulanger</h4> 
-            <h4>2020-2021, 2022-2023</h4>
-            <h4>Amiens, Merignac</h4>
-            <p>Conseillère service client</p>
-            <p>Accueil de la clientèle,
-                gestion des stocks, service
-                après vente.
-            </p>
-            <h4>Cinéma Gaumont</h4> 
-            <h4>2019-2020</h4>
-            <h4>Amiens</h4>
-            <p>Agent de cinéma</p>
-            <p>Accueil de la clientèle,
-                entretien des salles, vente.
-            </p> 
-        </div>
+</container_projets>
 
 </body>
 
