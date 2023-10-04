@@ -1,5 +1,5 @@
-header
-{
+/* Header Styles */
+header {
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -7,137 +7,134 @@ header
     border-radius: 50px;
 }
 
-#infos h1
-{
-    color:white;
-    font-family:"Orbitron";
-    display: inline-block;
-}
-
-#infos h2
-{
-    color:white;
-    font-family:"Orbitron";
+#infos h1, #infos h2 {
+    color: white;
+    font-family: "Orbitron";
     background: none;
-    padding: 0;
-
 }
 
-nav
-{
-    background-color:darksalmon;
+nav {
+    background-color: darksalmon;
     border-radius: 50px;
     font-family: "Orbitron";
     font-size: large;
 }
 
-ul
-{
+ul {
     list-style-type: none;
 }
 
-li
-{
+li {
     text-decoration: none;
-    color:purple;
+    color: purple;
     display: inline-block;
     align-content: center;
     font-family: "Orbitron";
     padding: 10px;
-    
 }
 
-
-h2
-{
-    color:purple;
-    font-family:"Orbitron";
-    padding-bottom: 20px;
-    padding-top: 20px;
+/* Heading Styles */
+h2 {
+    color: purple;
+    font-family: "Orbitron";
+    padding: 20px;
     text-align: center;
     background-image: url(https://www.preventioninfection.fr/wp-content/uploads/2022/08/AdobeStock_186445101-scaled.jpeg);
-    background-position:left;
+    background-position: left;
     border-radius: 50px;
 }
 
-h3
-{
-    color:purple;
-    font-family:"Orbitron";
+h3 {
+    color: purple;
+    font-family: "Orbitron";
 }
 
-h4
-{
-    color:black;
-    font-family:"Orbitron";
+h4 {
+    color: black;
+    font-family: "Orbitron";
 }
 
-container_presentation 
-{
+/* Presentation Section Styles */
+container_presentation {
     display: flex;
     justify-content: space-evenly;
 }
 
-container_presentation #photo
-{
+container_presentation #photo {
     margin-right: -40px;
     max-width: 60%;
     text-align: center;
 }
 
-container_presentation img
-{
+container_presentation img {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 50px;
 }
 
-container_presentation #txt 
-{
+container_presentation #txt {
     background-color: darksalmon;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
     border-radius: 50px;
-
     padding: 40px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     color: purple;
-    font-size:large;
-
+    font-size: large;
 }
 
-container_formation
-{
+/* Competences Section Styles */
+container_competences {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+container_competences #container_informatique,
+container_competences #container_bioinfo {
+    background-color: darksalmon;
+    margin-left: 50px;
+    border-radius: 50px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: purple;
+    font-size: large;
+    width: 50%;
+    height: 80%;
+}
+
+/* Formation Section Styles */
+container_formation {
     display: flex;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
-container_formation #formation
-{
+container_formation #formation {
     background-color: darksalmon;
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 50px;
     padding: 50px;
-    font-size:large;
+    font-size: large;
 }
 
-links
-{
+/* Links Styles */
+links {
     text-decoration: none;
-    color:black;
+    color: black;
     display: inline-block;
-    position:absolute;
-    top:40px;
-    right:40px;    
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
 
-#competences
-{
+/* Competences Styles */
+#competences {
     background-color: darksalmon;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -147,20 +144,21 @@ links
     text-align: center;
 }
 
-#competences li
-{
+#competences li {
     display: grid;
     place-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: black;
 }
 
-#competences ul
-{
-    margin: 10px;
+#competences ul {
+    margin: 5px;
     vertical-align: middle;
+    font-family: 'Nunito', sans-serif;
 }
 
-#suiteComp
-{
+/* SuiteComp Styles */
+#suiteComp {
     background-color: darksalmon;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -170,14 +168,13 @@ links
     text-align: center;
 }
 
-#suiteComp img
-{
+#suiteComp img {
     padding-left: 50px;
     padding-right: 50px;
 }
 
-container_projets
-{
+/* Projets Section Styles */
+container_projets {
     background-color: darksalmon;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -186,35 +183,29 @@ container_projets
     padding: 50px;
     font-family: 'Nunito', sans-serif;
     font-size: large;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-justify: auto;
 }
 
-container_projets #texte_projet
-{
+container_projets #texte_projet {
     width: 50%;
-    float:right;
+    float: right;
     margin-right: 20px;
-
 }
 
-container_projets #image_projet
-{
+container_projets #image_projet {
     flex-basis: 40%;
 }
 
-container_projets img
-{
+container_projets img {
     max-width: 100%;
     border-radius: 50px;
 }
 
-#experiences
-{
+/* Experiences Section Styles */
+#experiences {
     background-color: darksalmon;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -223,8 +214,8 @@ container_projets img
     padding: 50px;
 }
 
-footer
-{
+/* Footer Styles */
+footer {
     text-align: center;
     text-decoration: none;
     padding: 10px;
