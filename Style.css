@@ -7,7 +7,7 @@ header {
     border-radius: 50px;
 }
 
-#infos h1, #infos h2 {
+.infos h1, .infos h2 {
     color: white;
     font-family: "Orbitron";
     background: none;
@@ -22,6 +22,7 @@ nav {
 
 ul {
     list-style-type: none;
+    justify-content: space-evenly;
 }
 
 li {
@@ -30,7 +31,7 @@ li {
     display: inline-block;
     align-content: center;
     font-family: "Orbitron";
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Heading Styles */
@@ -42,6 +43,9 @@ h2 {
     background-image: url(https://www.preventioninfection.fr/wp-content/uploads/2022/08/AdobeStock_186445101-scaled.jpeg);
     background-position: left;
     border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 h3 {
@@ -55,72 +59,92 @@ h4 {
 }
 
 /* Presentation Section Styles */
-container_presentation {
-    display: flex;
+.containerPresentation {
+    padding-top: 44px;
+    display: -webkit-inline-flex;
     justify-content: space-evenly;
 }
 
-container_presentation #photo {
-    margin-right: -40px;
-    max-width: 60%;
-    text-align: center;
+.photo {
+    width: inherit;
 }
 
-container_presentation img {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.photo img {
     border-radius: 50px;
+    width: 100%;
 }
 
-container_presentation #txt {
+.txt {
     background-color: darksalmon;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
     border-radius: 50px;
-    padding: 40px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    color: purple;
-    font-size: large;
+    color: black;
+    font-size: medium;
+    line-height: 1.6;
+    align-content: start;
+    height:inherit;
+}
+
+.txt .paragraphs {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Competences Section Styles */
-container_competences {
-    width: 100%;
-    display: flex;
-    gap: 16px;
-}
 
-container_competences #container_informatique,
-container_competences #container_bioinfo {
+.competences{
     background-color: darksalmon;
-    margin-left: 50px;
     border-radius: 50px;
-    padding: 40px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     color: purple;
-    font-size: large;
-    width: 50%;
-    height: 80%;
+    font-size: medium;
 }
 
+.competences li {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+.competences ul {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.competences h4 {
+    color: purple;
+}
+
+
 /* Formation Section Styles */
-container_formation {
+.formation {
     display: flex;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
-container_formation #formation {
+.formation #formation {
     background-color: darksalmon;
     margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
     border-radius: 50px;
-    padding: 50px;
     font-size: large;
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+}
+
+.formationAndCompetences {
+    padding-top: 44px;
+    display: -webkit-inline-flex;
+    justify-content: space-evenly;
+    padding-bottom: 44px;
+}
+
+.formationText {
+    padding-left: 44px;
+    padding-right: 44px;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* Links Styles */
@@ -133,86 +157,53 @@ links {
     right: 40px;
 }
 
-/* Competences Styles */
-#competences {
-    background-color: darksalmon;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 50px;
-    padding: 50px;
-    text-align: center;
-}
-
-#competences li {
-    display: grid;
-    place-items: center;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-}
-
-#competences ul {
-    margin: 5px;
-    vertical-align: middle;
-    font-family: 'Nunito', sans-serif;
-}
-
-/* SuiteComp Styles */
-#suiteComp {
-    background-color: darksalmon;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 50px;
-    padding: 50px;
-    text-align: center;
-}
-
-#suiteComp img {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 /* Projets Section Styles */
-container_projets {
+.containerProjets {
     background-color: darksalmon;
     margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50px;
-    padding: 50px;
     font-family: 'Nunito', sans-serif;
-    font-size: large;
+    font-size: medium;
     display: flex;
     align-items: center;
     justify-content: center;
     text-justify: auto;
+    padding-bottom: 44px;
 }
 
-container_projets #texte_projet {
-    width: 50%;
-    float: right;
-    margin-right: 20px;
-}
 
-container_projets #image_projet {
-    flex-basis: 40%;
-}
-
-container_projets img {
+.containerProjets img {
     max-width: 100%;
     border-radius: 50px;
 }
 
-/* Experiences Section Styles */
-#experiences {
-    background-color: darksalmon;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 50px;
-    padding: 50px;
+.complexNavigatorProject, .xmlMakerContainer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
 }
+
+.arubot {
+    text-align: justify;
+    margin-right: auto;
+    top:0;
+}
+
+.arubotImg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arubotContainer {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+    align-content: space-around;
+    text-align: center;
+}
+
 
 /* Footer Styles */
 footer {
@@ -222,3 +213,20 @@ footer {
     background-image: url(https://www.preventioninfection.fr/wp-content/uploads/2022/08/AdobeStock_186445101-scaled.jpeg);
     border-radius: 50px;
 }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+  }
