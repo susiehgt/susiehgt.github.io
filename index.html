@@ -6,7 +6,7 @@
     <meta name="keywords" content="CV, HTML" />
     <meta name="author" content="Susie HUGET" />
     <title>CV HUGET Susie</title> 
-    <link rel="stylesheet" href="https://susiehgt.github.io/Style.css"/>
+    <link rel="stylesheet" href="Style.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
 </head>
 
@@ -25,10 +25,9 @@
 
 
 <header>
-    <div id="infos"> 
+    <div class="infos"> 
         <h1>HUGET Susie</h1>
-        <h2>Bioinformaticienne</h2>
-        
+        <h2>Ingénieure logiciel</h2>
         <links>
             <ul>
                 <a href="https://www.linkedin.com/in/susie-huget/"><li><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-a7sf08js.png" width="50px" height="50px" title="Linkedin"></li></a>
@@ -42,94 +41,90 @@
         <ul>
             <a href="#competences"><li>Compétences</li></a>
             <a href="#formation"><li>Formation</li></a>
-            <a href="#Projet_arubot"><li>Projets</li></a>
+            <a href="#projets"><li>Projets</li></a>
             <a href="#contact"><li>Contact</li></a>
         </ul>
     </nav>
 </header>
 
-<container_presentation>
-    <div id="txt">
+<div class="containerPresentation col-12">
+    <div class="txt col-5">
         <h2>A propos de moi</h2>
-        <p>Je suis actuellement à la recherche d'un emploi suite à mon master en bio-informatique.</p>
-        <p>Suite a ma licence en Biologie Humaine, je suis portée vers la création de sites webs, de logiciels ainsi que la robotique dans le domaine médical.</p>
-        <p>Ce site web fait partie de mes projets personnels. Il est le fruit de mes compétences en programmation (ici HTML et CSS) et est disponible en anglais. 
-            J'ai pris soin d'intégrer les liens aux différentes formations auxquelles j'ai participés et vous pouvez me contacter en cliquant sur les liens menants à mon Linkedin ou à mon adresse mail.
-        </p>
+        <div class="paragraphs">
+            <p>
+            Après avoir obtenu une licence en biologie humaine, j'ai poursuivi un master en bioinformatique. Je suis passionnée par l'ingénierie logicielle, le développement web et l'analyse de données appliquée à la biologie. J'ai hâte de mettre en pratique les compétences acquises au cours de mes études et de mes expériences professionnelles dans un poste en bioinformatique.
+            </p>
+            <p>
+            Ce site web est l'un de mes projets personnels. Il illustre mes compétences en programmation, notamment en HTML et CSS, et est disponible en anglais. J'y ai intégré des liens vers les différentes formations auxquelles j'ai participé, et vous pouvez me contacter via mon profil LinkedIn ou par email.
+        </p>   
+        </div>
     </div>
-    <div id="photo">
-        <img src="https://susiehgt.github.io/IMG_1789.jpeg" title="Susie HUGET" width="80%"> 
+    <div class="photo col-5">
+        <img src="IMG_1789.jpeg" title="Susie HUGET"> 
     </div>
-</container_presentation>
+</div>
 
-<div id="competences">
+<div class="formationAndCompetences col-12">
+<div class="competences col-3" id="competences">
     <h2>Compétences</h2>
-    <container_competences>
-        <div id="container_informatique">
-            <h2>Informatique</h2>
-            <ul>
-                <li>
-                    <h3>Algorithmique et programmation</h3>
-                        <li>Python, Java, C, C++, Bash</li>
-                </li>
-                <li>
-                    <h3>Programmation web</h3>
-                        <li>HTML, CSS, Javascript</li>
-                </li>
-                <li>
-                    <h3>Traitement de données</h3>
-                        <li>PostgreSQL</li>
-                </li>
-                <li>
-                    <h3>Systèmes d'exploitation</h3>
-                        <li>Linux, MacOS, Windows</li>
-                </li>
-                <li>
-                    <h3>Génie logiciel</h3>
-                        <li>Design pattern, XML, JSON, UML</li>
-                </li>
-            </ul>
-        </div>
-        <div id="container_bioinfo">
-            <h2>Bio-informatique</h2>
-            <ul>
-                <li>
-                    <h3>Outils</h3>
-                        <li>Blast, Galaxy, Bowtie2, ClustalW</li>
-                </li>
-                <li>
-                    <h3>Statistiques</h3>
-                        <li>Data mining, langage de programmation R</li>
-                </li>
-                <li>
-                    <h3>Traitement d'images</h3>
-                        <li>ImageJ</li>
-                        <li>Visualisation de données structurales en 2D et 3D (SVG et webGL)</li>
-                </li>
-                <li>
-                    <h3>Biologie</h3>
-                        <li>Biologie humaine, Physiopathologie, Biochimie</li>
-                </li>
-            </ul>
-        </div>
-    </container_competences>
+    <h3>Informatique</h3>
+    <ul>
+        <li>
+            <h4>Algorithmique et programmation</h4>
+                <p>Python, Java, C, C++, Bash</p>
+        </li>
+        <li>
+            <h4>Programmation web</h4>
+                <p>HTML, CSS, Javascript, Typescript, Angular</p>
+        </li>
+        <li>
+            <h4>Traitement de données</h4>
+                <p>PostgreSQL</p>
+        </li>
+        <li>
+            <h4>Systèmes d'exploitation</h4>
+                <p>Linux, MacOS, Windows</p>
+        </li>
+        <li>
+            <h4>Génie logiciel</h4>
+                <p>Design pattern, XML, JSON, UML</p>
+        </li>
+    </ul>
+    <h3>Bio-informatique</h3>
+    <ul>
+        <li>
+            <h4>Outils</h4>
+                <p>Blast, Galaxy, Bowtie2, ClustalW</p>
+        </li>
+        <li>
+            <h4>Statistiques</h4>
+                <p>Data mining, langage de programmation R</p>
+        </li>
+        <li>
+            <h4>Traitement d'images</h4>
+                <p>ImageJ</p>
+                <p>Visualisation de données structurales en 2D et 3D (SVG et webGL)</p>
+        </li>
+        <li>
+            <h4>Biologie</h4>
+                <p>Biologie humaine, Physiopathologie, Biochimie</p>
+        </li>
+    </ul>
 </div>
 
 
-<container_formation>
+<div class="formation col-7">
     <div id="formation">
         <h2> Formation </h2>
+    <div class="formationText">
             <a href="https://formations.u-bordeaux.fr/#/details-formation?type=formation&id=118" title="Lien vers la page de description du master Bio-informatique"><h3>Master Bio-informatique, mention Biologie Computationnelle</h3></a>
                 <h4>Université de Bordeaux</h4>
-                <h5>En cours, premier semestre obtenu avec mention Assez Bien</h5>
-                Ma première année m’a initié à divers langages de programmation. Les différents projets auxquels j’ai pu participer m’ont permis 
-                l’apprentissage d’algorithmes utilisés dans le domaine de la biologie ainsi que les règles d’usage des différents langages. 
-                J’ai pu participer à divers projets dans plusieurs domaines tels que le développement web, le développement de logiciels, 
-                l’analyse de données ainsi que le traitement d’images. A l’occasion de mon projet de fin d’année, j’ai également eu la chance de 
-                travailler sur un projet de robotique dans lequel j’ai pu étudier les bases de l’électronique et de la programmation de matériel.
-                Je suis actuellement stagiaire à l'institut européen de bioinformatique situé à Cambridge (Royaume-Uni) afin de conclure mon master.
-
-
+                <h5>Mention Bien</h5>
+                Ma première année m’a permis de découvrir divers langages de programmation. 
+                Les différents projets auxquels j’ai participé m’ont permis d’apprendre des algorithmes utilisés en biologie ainsi que les bonnes pratiques propres à chaque langage. 
+                J’ai pu contribuer à plusieurs projets dans des domaines variés tels que le développement web, le développement de logiciels, l’analyse de données et le traitement d’images. 
+                Pour mon projet de fin d’année, j’ai également eu l’opportunité de travailler sur un projet de robotique, où j’ai découvert les bases de l’électronique et de la programmation de matériel. 
+                J'ai effectué mon stage au sein de l'EMBL-EBI (Hinxton, Royaume-uni).
         <a href="https://2is.u-picardie.fr/formations/licence-sps/licence-sciences-pour-la-sante-583733.kjsp?RH=1550147816631" title="Lien vers la page de description de la licence Sciences Pour la Santé"><h3>Licence de Sciences Pour la Santé, mention Biologie Humaine et technologies de la santé</h3></a>
             <h4>Université Picardie Jules Vernes </h4>
             <h4>Université Cyrillus y Methoda</h4>
@@ -139,9 +134,6 @@
                 Durant cette année à l’étranger j’ai pu travailler sur un projet de biologie dont le but a été d’identifier les différents micro-organismes présents dans les 
                 sources thermales de Piešťany. Cette année fût enrichissante culturellement et scolairement car, les effectifs en Slovaquie étant réduits, 
                 j’ai pu bénéficier d’un très bon suivi et aussi de beaucoup d’occasions de travailler et de manipuler en laboratoires.
-                    </p>
-                    </p>
-
         <h3>Baccalauréat Scientifique</h3>
             <h4>Lycée Madeleine Michelis</h4>
                 <h5>Mention Assez Bien</h5>
@@ -150,30 +142,65 @@
             <h4>Lycée Madeleine Michelis</h4>
                 <h5>Mention Assez Bien</h5>
     </div>
-</container_formation>
-
-
-<container_projets>
-    <div id="Projet_arubot">
-        <h2>Projets</h2>
-        <div id="texte_projet">
-            <h3>Le projet ArUbot</h3>
-            Le but de ce projet a été la construction d'une flotte de robots détectés par des marqueurs ArUco via une caméra externe. 
-            <p>Lors de ce projet de groupe, nous avons modélisé le robot grâce au logiciel OnShape. Ensuite nous avons construit ces robots. 
-            Ceux-ci sont équipés d'un microcontroleur ESP32, d'un driver L298N permettant de contôler 2 moteurs.
-            </p> Ma contribution au projet a été l'implémentation de code sur le microcontrôleur via l'IDE (integrated development environment) ArduinoIDE. 
-            Cet IDE utilise le langage de programmation C++ qui est orienté dans la programmation de l'hardware. J'ai aussi développé le site web permettant le contrôle des 
-            robots. Pour cela j'ai utilisé le langage de programmation HTML. 
-        </div>
-        <div id="image_projet">
-            <img src="https://susiehgt.github.io/Projet_ArUbot.png" title="Robot du projet ArUbot" width="40%">
-        </div>
     </div>
-</container_projets>
+</div>
+</div>
+
+<div class="containerProjets col-10" id="projets">
+    <div class="projectsContainer">
+        <h2>Projets</h2>
+        <div class="complexNavigatorProject col-8"> 
+           <a href="https://github.com/Complex-Portal/complex-portal-view"> <h3>Le Molecular Complex Navigator (EMBL-EBI)</h3> </a>
+                <p>
+                    Le Laboratoire Européen de Biologie Moléculaire (EMBL) compte parmi ses établissements l'Institut Européen de Bioinformatique (EBI).
+                    Ce dernier a pour but de générer et centraliser les données moléculaires afin de les rendre accessibles au public.
+                    J'ai eu la chance de travailler au sein de l'équipe traitant des réseaux moléculaires. Durant mon stage au sein de l'entreprise, 
+                    j'ai eu l'occasion de développer le <i>Molecular Complex Navigator</i>, un outil de visualisation et de comparaison web des complexes protéiques disponible en cliquant sur ce 
+                    <a href="https://www.ebi.ac.uk/complexportal/complex/search?query=Ndc80&page=1&minConfidence=1&displayMode=navigator-view&mergeOrthologs=false&componentsSorting=Default&idDisplay=true&organismIconDisplay=true&typeIconDisplay=true">lien</a>.
+                    Cet outil web, développé en <b>TypeScript</b> avec le framework <b>Angular</b>, est performant tout en étant interactif. 
+                    L'intégration de données telles que l'orthologie permet une comparaison des complexes à travers les espèces.
+                    Cette dernière a nécessité l'ajout de nouvelles références vers la base de données Panther, intégrées dans notre propre base grâce à du 
+                    <a href="https://github.com/EBI-IntAct/intact-data-exchange">code</a> <b>Java</b> utilisant le framework <b>Spring</b>.
+                    Ce projet m'a permis de développer mes compétences en développement web et en communication, notamment grâce aux diverses présentations 
+                    que j'ai réalisées (Scientific Advisory Board, EMBL-EBI Protein and Complexes Day, HUPO Conference 2024).
+                </p>
+        </div>
+        <div class="xmlMakerContainer col-8"> 
+            <a href="https://github.com/MICommunity/psimi-maker-flattener"><h3>Le XML maker (EMBL-EBI)</h3></a>
+            <p>
+                À la suite de mon stage au sein de l'EMBL-EBI, j'ai eu l'opportunité de rester dans l'équipe des réseaux moléculaires pour mettre à jour et améliorer le XML Maker.
+                Cette application <b>Java</b> utilisant le framework <b>Spring</b> est un outil essentiel pour les curateurs scientifiques, permettant de générer des fichiers XML à partir des données fournies par les laboratoires.
+                La première étape de ce projet a été l'implémentation d'un formateur permettant aux curateurs de convertir des noms de gènes et de protéines en numéros d'accession UniProtKB.
+                Cela représente un gain de temps considérable pour les curateurs qui extrayaient auparavant ces données manuellement. 
+                La seconde étape de ce projet, toujours en cours, est la refonte du générateur de fichiers XML pour implémenter les formats standards PSI-MI à l'aide d'une bibliothèque adaptée.
+            </p>            
+        </div>
+        <div class="arubotContainer col-12">
+            <div class="arubotImg col-5">
+                <img src="Projet_ArUbot.png" title="Robot du projet ArUbot">
+            </div>
+            <div class="arubot col-5">
+                <h3>Le projet ArUbot (Université de Bordeaux)</h3>
+                <p>
+                    L’objectif de ce projet était la construction d'une flotte de robots détectés par des marqueurs ArUco via une caméra externe.
+                    Dans le cadre de ce projet de groupe, nous avons modélisé le robot à l'aide du logiciel OnShape, puis nous avons assemblé les robots.
+                    Ces robots sont équipés d'un microcontrôleur ESP32 et d'un driver L298N permettant de contrôler deux moteurs.
+                </p>
+                <p>
+                    Ma contribution au projet a été l’implémentation du code sur le microcontrôleur via l'IDE (environnement de développement intégré) ArduinoIDE.
+                    Cet IDE utilise le langage de programmation C++, orienté vers la programmation de matériel. J'ai également développé le site web permettant de contrôler les robots, en utilisant le langage de programmation HTML.
+                </p>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
 
 </body>
 
 <footer>
+    <h3 style="color: white">&copy; 2024 HUGET Susie - All Rights Reserved</h3>
     <contact>
         <div class="col-sm-7" id="contact">
             <a name="contact">
