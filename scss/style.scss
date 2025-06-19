@@ -124,3 +124,8 @@ nav a {
   color: white;
   padding-top: $min-bootstrap-padding;
 }
+
+.link {
+  color: $title-color;
+  text-underline: $title-color;
+}
