@@ -103,4 +103,10 @@ nav a {
   padding-top: 1rem;
 }
 
+.link {
+  color: purple;
+  text-decoration: underline;
+  text-decoration-color: purple;
+}
+
 /*# sourceMappingURL=style.css.map */

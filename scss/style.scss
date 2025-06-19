@@ -127,5 +127,6 @@ nav a {
 
 .link {
   color: $title-color;
-  text-underline: $title-color;
+  text-decoration: underline;
+  text-decoration-color: $title-color;
 }
